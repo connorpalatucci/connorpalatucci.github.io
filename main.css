@@ -1,0 +1,198 @@
+body {
+	font-family: 'Cabin Condensed', sans-serif;
+	background-color: #FFFDF6;
+	margin: 0;
+	min-width: 750px;
+}
+
+img {
+	float: left;
+	padding: 10px;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 30px;
+	margin-bottom:15px;
+	margin-top: 15px;
+	padding: 5px;
+
+}
+
+h3 {
+	font-size: 22px;
+	
+}
+
+p {
+	font-size:17px;
+	margin-bottom: 5px;
+	padding: 10px;
+	min-width: 750px;
+	line-height: 150%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+li {
+padding: 10px;
+}
+
+canvas {
+	float: left;
+	padding: 10px;
+}
+
+#welcome {
+text-align: center;
+}
+
+#welcome h1 {
+font-size: 90px;
+margin: 25px 0px 10px;
+}
+
+
+#note {
+margin-left: 10%;
+margin-bottom: 10px;
+}
+
+#topButtons{
+position:absolute;
+top:20px;
+width:100%;
+}
+
+
+
+.banner {
+	background-color: #182280;
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 35px;
+	opacity:0.85;
+    box-shadow: 0px 5px 10px #888888;
+}
+
+.title {
+	font-size: 50px;
+	position: absolute;
+	margin-top:75px;
+	width:100%;
+	min-width: 750px;
+   	text-align:center;
+
+}
+
+.thumbnail {
+	height: 100%;
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+
+}
+
+
+.content {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	background-color:#d8d9df;
+	padding:35px;
+	box-shadow: 0px 5px 10px #888888;
+	}
+	
+.text-block {
+	clear: both;
+}
+
+.close {
+	width: 110px;
+	background-color: #9799AC;
+	opacity: 0.85;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	box-shadow: 0px 5px 10px #888888;
+}
+
+.other {
+	width: 110px;
+	background-color: #9799AC;
+	opacity: 0.85;
+	text-align: center;
+	float:right;
+	border-radius: 5px;
+	margin: 20px;
+	box-shadow: 0px 5px 10px #888888;
+}
+
+.about{
+width:1000px;
+min-width: 750px;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+
+.half {
+	width: 500px;
+	float:left;
+}
+
+.half img{
+	float:none;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.half p {
+min-width: 375px;
+}
+
+.video {
+	width: 100%;
+	padding: 10px;
+}
+
+.video video {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.other h2{
+margin:5px;
+}
+
+#closeall {
+width: 140px;
+}
+
+#closeall h2{
+	padding:10px;
+}
+
+#topButtons a {
+	color:#000000;
+}
+
+#topButtons a:active {
+	color:#000000;
+}
+
+
+#topButtons a:visited{
+	color:#000000;
+}
