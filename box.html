@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Useless Box</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="blog.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class = "container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Connor Palatucci</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class = "container">
+    <h1 style ="font-size:70px;">Useless Box</br>
+      <small style ="font-size:35px;">Fall 2013</small></h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 blog">
+          <h2 id="Intro">Intro</h2>
+          <p> I'm sure that if you've found your way to my website you've seen
+            <a href="https://www.youtube.com/watch?v=aqAUmgE3WyM">this</a> video.
+            Here's my version of the useless box.
+          </p>
+          <div class = "videocont">
+            <video width="100%" controls>
+              <source src="images/box/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <h2 id="Design">The Design</h2>
+            <p>This is the cad, I used Solidworks. The outside is just a cube held
+              together with glued finger joints, and on the inside is the motor mount.
+              I've seen laser cut boxes (like the one in the ThinkGeek video) that use a
+              combination of finger joints and bolts, but I don't really like that aesthetic.
+              The advantage of that design is that you can take it apart later if you need
+              to. Because I would only ever need to open up this box to change the batteries,
+              I just left one side unglued (duct tape).
+            </p>
+            <img class="img-responsive" src="images/box/cad.PNG">
+
+            <h2 id="Circuit">The Circuit</h2>
+            <img class="img-responsive" src="images/box/circuit.PNG">
+            <p>Here's how it works. The switch on the top of the box is a DPDT switch. When you
+              flip it, it changes the polarity at the leads of the motor. This changes the direction
+              that the motor turns, so when you flip the switch the motor starts turning the arm
+              towards the switch. Once the arm reaches and flips the switch it starts turning in
+              the opposite direction. When the arm is inside of the box it pushes down against a
+              limit switch that turns off the motor. It took a while to find a cheap motor with
+              enough torque to turn the switch, and I'm running it at twice the recommended voltage.
+              I'm not too worried about the health of the motor because it runs for such a short
+              time. I was originally a little concerned about resting current drain from the motor
+              because, in theory, it's cycling on and off between pushing down on the limit switch,
+              turning off and letting the switch back up, and then turning back on to push the switch
+              again. If this is happening, it's negligible; the limit switch is very easy to press.
+            </p>
+            <div class="row doubleimage" style="margin-bottom:10px;">
+              <div class = "col-md-6">
+                <img class="img-responsive" src="images/box/closed.JPG">
+              </div>
+              <div class = "col-md-6">
+                <img class="img-responsive" src="images/box/open.JPG">
+                </div>
+              </div>
+              <p>Here you can see how everything fits together inside the box. The hinges are just pieces
+                of fabric and the front panel is taped on in case I ever need to change the batteries.</p>
+
+              <h2 id="Conclusion">Conclusion</h2>
+              <p>This was a great project that had a lot of very interesting problems. Right
+                now I'm using it as a bookend in my room, and It's always fun to show to people
+                who don't know what it'll do.</p>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 blognav">
+              <h2>Navigate</h2>
+              <ol class="list-unstyled">
+                <li><a href="#Intro"><h4>Intro</h4></a></li>
+                <li><a href="#Design"><h4>The Design</h4></a></li>
+                <li><a href="#Circuit"><h4>The Circuit</h4></a></li>
+                <li><a href="#Conclusion"><h4>Conclusion</h4></a></li>
+              </ol>
+
+            </div>
+          </div>
+
+        </div>
+
+        <footer class="text-muted">
+          <div class="container">
+            <ul class="list-inline">
+              <li>Thanks for reading!</li>
+              <li><a href="#">Back to top</a></li>
+            </ul>
+          </div>
+        </footer>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+      </html>

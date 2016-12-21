@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-    <meta charset="utf-8">
+  <title>Gravity</title>
 
-    <title>Tree Fractal</title>
-	
-	<link href = "reset.css" rel = "stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700' rel='stylesheet' type='text/css'>
-	<link href="main.css" rel="stylesheet">
-	
-	
-  </head>
-  
-  <body> 
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="blog.css" rel="stylesheet">
 
-<div style="padding:20px">
- <div class = "processing">
-<script src="processing.js"></script>
-<canvas data-processing-sources="gravity.pde"></canvas>
-		
-		 </div>
-		 
-		 <h1> Tree Fractal </h1>
-		 <p>Click on the canvas and press any key to generate a new tree</p>
-		 <p><a href='index.html'>Home</a></p>
-</div>
-</body>
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class = "container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Connor Palatucci</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class = "container">
+    <h1 style ="font-size:70px;">Gravity Simulator</br>
+      <small style ="font-size:35px;">Fall 2013</small></h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 blog">
+        <img class="img-responsive" src="images/gravity/gravity.PNG">
+        <p> Here's a fun little gravity simulator that I also made in processing.
+          You can make different gravitational bodies and see how they interact.
+          If they get too close they'll combine into a more massive glob. The radii
+          of the bodies increase with the cube root of the mass, as if they were
+           spheres. This one was a little tricky and taught me a lot about how Java
+           does math. Check it out on my github!</p>
+		 <p>CONTROLS: click and drag to create planets. The longer you click, the more massive
+       the planet will be. Hold DOWN while clicking to make a sun. Press shift to clear the trails.
+       press space to clear the bodies.
+		 </p>
+
+      </div>
+    </div>
+
+
+        <footer class="text-muted">
+          <div class="container">
+            <ul class="list-inline">
+              <li>Thanks for reading!</li>
+              <li><a href="#">Back to top</a></li>
+            </ul>
+          </div>
+        </footer>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+      </html>

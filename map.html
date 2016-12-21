@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Map</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="blog.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class = "container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Connor Palatucci</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class = "container">
+    <h1 style ="font-size:70px;">Topographic Map</br>
+      <small style ="font-size:35px;">Fall 2014</small></h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 blog">
+          <h2 id="Intro">Intro</h2>
+          <p>This project was a gift. I’ve been wanting to build a map like this for a long time;
+            it must have been the first thing I thought of when I learned about laser cutting. I
+            finally had an excuse to spend an unwise amount of time on it in the middle of the semester,
+            so here’s the process. </p>
+            <p>The map is cut out of birch plywood and finished with tung oil. There’s a water based
+              stain on the ocean layer, and all of the type is in Baskerville Old face. The compass was
+              designed by my sister. <a href ="http://palatuccidesign.com/">Plug.</a></p>
+
+              <h2 id="Files">The Files</h2>
+              <img class="img-responsive" src="images/map/pdf.PNG" style="max-width:100%">
+              <p>I started with a PDF of the USGS Marion Quadrangle map.
+              </p>
+              <img class="img-responsive" src="images/map/ps.PNG" style="max-width:100%">
+              <p>Then, in Photoshop, I separated every layer on the map and made a 1 px trace of the contour
+                line (in red). All of the hydrography is also a 1 px trace shown in blue.
+              </p>
+              <img class="img-responsive" src="images/map/ai.PNG" style="max-width:100%">
+              <p>I then used the live trace function in Illustrator to go from a raster image to a vector
+                image. Laser cutters can only cut in vector paths; it wouldn't make sense to try making G-Code
+                out of a regular image. If I were to try sending an image to the laser machine, it would do what's
+                called a raster pass. The head would work its way down the wood going back and forth, turning on the
+                laser wherever it detects a pixel. This is similar to how a regular printer works. What I want, however,
+                is for the laser head to follow the path of the contour lines while continuously cutting. There's a
+                cool analog here to how CRT and CVT displays could work in either raster or vector. The tv could either
+                draw shapes on the screen with its electron beam (vector) or it could go back and forth across the whole
+                screen illuminating individual pixels (raster). The difference between a raster image and a vector image
+                is important to understand if you're trying to do laser cutting.
+              </p>
+              <p>This is also where I added all of the text. You'll notice that the compass isn't on this file.
+                That was centered on top of the map manually with the laser cutter as its own file because mixing
+                raster and vector is not very pleasant in AutoCad.
+              </p>
+
+              <h2 id="Cutting">Cutting and Building</h2>
+              <img class="img-responsive" src="images/map/mdf.JPG" style="max-width:100%">
+              <p>To get the vector image to a format the laser software can read (.dwg) I had to go from Visio to
+                AutoCad. This was a pain. Once I got cutable files I decided to do a scaled down test in MDF because
+                it's cheap. Good thing I tested it too because there were a lot of problems I had to resolve. Several
+                the lines didn't end up cutting. I never quite figured out what the problem was, but I think it could
+                have been one of two things. One possibility is that there were so many complex lines that the laser
+                cutter couldn't handle it. I had every piece of the map on one sheet because it was scaled down. Another
+                possibility is that the laser cutter was having trouble with the file mixing closed and open contours.
+                It seemed like all of the lines that didn't cut were open contours, and all of the lines that did
+                cut were closed. I have no idea why this would be a problem.
+              </p>
+              <div class="row doubleimage">
+                <div class = "col-md-6">
+                  <img class="img-responsive" src="images/map/sawdust.JPG">
+                  <p>Sand the wood before etching. I hadn't thought of this ahead of time so in between sanding
+                    and finishing with tung oil, I had to go through every line with a little brush and a tack cloth
+                    to clear out the sawdust.
+                  </p>
+                </div>
+                <div class = "col-md-6">
+                  <img class="img-responsive" src="images/map/almost.JPG">
+                  <p>Here I was getting a few pieces cut every day. The whole project was getting harder
+                    and harder to hide in my dorm room. I was starting to glue the pieces together using binder clips
+                    as clamps.
+                  </p>
+                </div>
+              </div>
+
+              <img class="img-responsive" src="images/map/stain.JPG" style="max-width:100%">
+              <p>Staining went very well. I was so worried about how I was going to keep the stain out
+                of the compass because I wanted to preserve the contrast. I spent a few days worrying about
+                it when I finally just did it, and it magically worked out exactly how I wanted. This was very
+                exciting.
+              </p>
+
+              <img class="img-responsive" src="images/map/done.JPG" style="max-width:100%">
+              <p>All done. phew.
+              </p>
+
+              <h2 id="Conclusion">Conclusion</h2>
+              <p>This project took quite a long time but it was very rewarding. Most of my time was spent
+                trying to figure out how to go from an image to a file I could laser cut. I had been thinking
+                of this as a barrier for other projects, but now that I can do it I have a lot of new ideas. It
+                took about two months and had a lot of very frustrating periods. It's a good thing that I made it
+                as a gift because if it were for myself I would have given up in the first week. I'm pleased
+                with the result, but there are two errors in the final product that I'll take
+                with me to the grave.
+              </p>
+
+
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 blognav">
+              <h2>Navigate</h2>
+              <ol class="list-unstyled">
+                <li><a href="#Intro"><h4>Intro</h4></a></li>
+                <li><a href="#Files"><h4>The Files</h4></a></li>
+                <li><a href="#Cutting"><h4>Cutting and Building</h4></a></li>
+                <li><a href="#Conclusion"><h4>Conclusion</h4></a></li>
+              </ol>
+
+            </div>
+          </div>
+
+        </div>
+
+        <footer class="text-muted">
+          <div class="container">
+            <ul class="list-inline">
+              <li>Thanks for reading!</li>
+              <li><a href="#">Back to top</a></li>
+            </ul>
+          </div>
+        </footer>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+      </html>
+      `
