@@ -2,6 +2,10 @@ body {
   padding-bottom: 20px;
 }
 
+p {
+  text-align:justify
+}
+
 .videocont{
   max-width:80%;
   margin:auto;
