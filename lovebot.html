@@ -50,9 +50,9 @@
          <img class="img-responsive" src="images/lovebot/lovebot.jpg">
          <p style="text-align:center"> Photo By <a href='https://www.instagram.com/katie.palatucci/'>Katie Palatucci</a> </p> 
 
-         <p>A <a href ="https://en.wikipedia.org/wiki/Markov_chain">markov chain</a> used to generate text is a naive but surprisingly effective approach to generating text. It's the same model that the predictive keyboard on your smartphone uses. So if all you ever wrote on your phone was romantic poetry, and you wrote a lot of it, this is what your keyboard may output. At its core a markov chain is just a huge graph where each node is one state and the weight of each path is your probablilty of traveling to that state next. In the context of generating text each node would be a specific word and it's connecected to all the words that are likely to follow it. This graph weighted connections has to be generated on a huge body of text called a corpus, but if that whole corpus is written in the same style you can pick up the writing style in the model. </p>
+         <p>A <a href ="https://en.wikipedia.org/wiki/Markov_chain">markov chain</a> used to generate text is a naive but surprisingly effective approach to generating text. It's the same model that the predictive keyboard on your smartphone uses. So if all you ever wrote on your phone was romantic poetry, and you wrote a lot of it, this is what your keyboard would output. At its core a markov chain is just a huge graph where each node is one state and the weight of each path is your probablilty of traveling to that state next. In the context of generating text each node would be a specific word and it's connecected to all the words that are likely to follow it. This graph of weighted connections has to be generated on a huge body of text called a corpus, but if that whole corpus is written in the same style you can pick up the writing style in the model. </p>
 
-       	<p>All I had to do was get a large enough body of romantic poetry, Sufjan Stevens and Mitski lyrics to generate a good model. You can make your model even better by going further than 1 word deep. Lovebot uses a n=3 model so as its building a sentence it looks at the previous 3 words and says 'okay what's likely to follow this word, what's likely to come 2 words after this word, and what's likely to come 3 words after this word' and it uses all of that infomation to make a smart choice about the next word. Because of the nature of our language this can build new and sensible sentinces that aren't present in the corpus (the output is checked to not be directly copying anything in the corpus). One example of this working well is that a verb almost always follows a pronoun. All of the model generating was done using a great Python library by Jeremy Singer-Vine called <a href='https://github.com/jsvine/markovify'>Markovify</a>. This library is super easy to set up and all you need is a good clean corpus. My cleaning script is on github but it's definitely not perfect, some junk still makes it out into the poems. </p>
+       	<p>All I had to do was get a large enough body of romantic poetry, Virginia Woold love letters, Sufjan Stevens and Mitski lyrics to generate a good model. You can make your model even better by going further than 1 word deep. Lovebot uses a n=3 model so as its building a sentence it looks at the previous 3 words and says 'okay what's likely to follow this word, what's likely to come 2 words after this word, and what's likely to come 3 words after this word' and it uses all of that infomation to make a smart choice about the next word. Because of the nature of our language this can build new and sensible sentinces that aren't present in the corpus (the output is checked to not be directly copying anything in the corpus). One example of this working well is that a pronoun is almost always followed by a verb. All of the model generating was done using a great Python library by Jeremy Singer-Vine called <a href='https://github.com/jsvine/markovify'>Markovify</a>. This library is super easy to set up and all you need is a good clean corpus. My cleaning script is on github but it's definitely not perfect, some junk still makes it out into the poems. </p>
 
        	<p> The case is pretty simple it's just some conections to a 5V jack that go to power the raspberry pi and the printer and the lights. The backlight glow of the letters was done with a red theatre gel and some white LED strips. It looks alright but I definitely want to improve my method of backlighting text for future projects. I cadded everything in Catia V5 because that's what I'm using at work now.</p>
 
@@ -61,7 +61,7 @@
             
          <iframe style = 'display:block; margin:0 auto;' width="560" height="315" src="https://www.youtube.com/embed/SbgpBOXYpNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
 
-       	<h2>Best Lines</h2>
+       	<h2 id="Best">Best Lines</h2>
          <p><b>Here's some of my favorite lines the lovebot came up with while I was developing it</b><br><br></p>      
 
          <p>i kissed her again and again and again and again and again and again under the endless sky<br><br></p>
@@ -134,6 +134,7 @@
         <h2>Navigate</h2>
         <ol class="list-unstyled">
           <li><a href="#Intro"><h4>Intro</h4></a></li>
+          <li><a href="#Best"><h4>Best Lines</h4></a></li>
           <li><a href="#Resources"><h4>Resources</h4></a></li>
         </ol>
         <ol class="list-unstyled" style="margin-top:25px;">
