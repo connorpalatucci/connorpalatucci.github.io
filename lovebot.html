@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lovebot</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="blog.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class = "container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Connor Palatucci</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class = "container">
+    <h1 id = "Intro" style ="font-size:70px;">Lovebot-3000</br>
+      <small style ="font-size:35px;">August 2019</small></h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 blog">
+         <p>Lovebot-3000 is a computer I taught to love. Being in love is so complicated and confusing that we'll never be able to write a complete set of love poems. The closest we can get is to brute-force the problem and automate the process of writing romantic poetry. Lovebot-3000 uses a markov chain to produce love poems. The code was adapted for good from an evil ancestor of lovebot, MEGAGOD-3000, a robot that wrote divinely inspired prophecies for new cults and alien religions. </p>
+
+         <img class="img-responsive" src="images/lovebot/lovebot.jpg">
+         <p style="text-align:center"> Photo By <a href='https://www.instagram.com/katie.palatucci/'>Katie Palatucci</a> </p> 
+
+         <p>A <a href ="https://en.wikipedia.org/wiki/Markov_chain">markov chain</a> used to generate text is a naive but surprisingly effective approach to generating text. It's the same model that the predictive keyboard on your smartphone uses. So if all you ever wrote on your phone was romantic poetry, and you wrote a lot of it, this is what your keyboard may output. At its core a markov chain is just a huge graph where each node is one state and the weight of each path is your probablilty of traveling to that state next. In the context of generating text each node would be a specific word and it's connecected to all the words that are likely to follow it. This graph weighted connections has to be generated on a huge body of text called a corpus, but if that whole corpus is written in the same style you can pick up the writing style in the model. </p>
+
+       	<p>All I had to do was get a large enough body of romantic poetry, Sufjan Stevens and Mitski lyrics to generate a good model. You can make your model even better by going further than 1 word deep. Lovebot uses a n=3 model so as its building a sentence it looks at the previous 3 words and says 'okay what's likely to follow this word, what's likely to come 2 words after this word, and what's likely to come 3 words after this word' and it uses all of that infomation to make a smart choice about the next word. Because of the nature of our language this can build new and sensible sentinces that aren't present in the corpus (the output is checked to not be directly copying anything in the corpus). One example of this working well is that a verb almost always follows a pronoun. All of the model generating was done using a great Python library by Jeremy Singer-Vine called <a href='https://github.com/jsvine/markovify'>Markovify</a>. This library is super easy to set up and all you need is a good clean corpus. My cleaning script is on github but it's definitely not perfect, some junk still makes it out into the poems. </p>
+
+       	<p> The case is pretty simple it's just some conections to a 5V jack that go to power the raspberry pi and the printer and the lights. The backlight glow of the letters was done with a red theatre gel and some white LED strips. It looks alright but I definitely want to improve my method of backlighting text for future projects. I cadded everything in Catia V5 because that's what I'm using at work now.</p>
+
+       	<p> I brought the robot to my brothers wedding and everyone seemed to get a kick out of it. Now I think I'd like to leave it somewhere people can enjoy it but I'm not sure where.<p>
+
+            
+         <iframe style = 'display:block; margin:0 auto;' width="560" height="315" src="https://www.youtube.com/embed/SbgpBOXYpNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+
+       	<h2>Best Lines</h2>
+         <p><b>Here's some of my favorite lines the lovebot came up with while I was developing it</b><br><br></p>      
+
+         <p>i kissed her again and again and again and again and again and again under the endless sky<br><br></p>
+
+		<p>in you the wars and the flights accumulated from you the wings of a bird something of anguish and oblivion<br><br></p>
+
+		<p>look look he cried and pointed to the shape before his feet<br><br></p>
+ 
+		<p>do you love me now i count no more my lonesome years this blessed hour for all<br><br></p>
+
+		<p>my somber heart searches for you nevertheless and i love your eyes when the lies lit with a passionate fire<br>
+		you are here intangible and you are sad all at once like a voyage<br><br></p>
+ 
+		<p>as he read last rough simple plea i wait my queens commands i much desire your servant<br>
+		damn you creature i make you love me one word from you and i blame you if you want to bury me in your life my infinite dreams live<br><br></p>
+
+		<p>from the water from the home that ive wanted to write you a note and tell you all your dreams were true<br>
+		but could we be what were meant to be a pest to anyone this time<br>
+		onward and like the masts<br><br></p>
+
+		<p>all delight people raise their hands all delighted people raise their hands<br>
+		because i love you more than i could have believed and i was so young when i behaved twenty five<br>
+		and guarded by great guns out of the cloud by night<br><br></p>
+
+
+
+		<p>cross to me now for the west is a rose<br>
+		oh lift me from the glen below<br>
+		the twisted streets of london and the rumor of her wealth<br>
+		as nothing can be changed<br>
+		lapped by the crackling waves even as the strength of his arm<br>
+		jul i would not for the world must love and part<br>
+		the uses of my soul dyes your feet<br>
+		and this maiden she lived with no other wish than to go on every morning<br>
+		once more assailed the queen the death of a relative dear<br>
+		for that life is patriarchy<br>
+		cleaving the darkness round the gates of our earthmoulded senses<br><br></p>
+
+		<p>cross to me now for the west is a rose<br>
+		oh lift me from the glen below<br>
+		the twisted streets of london and the rumor of her wealth<br>
+		as nothing can be changed<br>
+		lapped by the crackling waves even as the strength of his arm<br>
+		jul i would not for the world must love and part<br>
+		the uses of my soul dyes your feet<br>
+		and this maiden she lived with no other wish than to go on every morning<br>
+		once more assailed the queen the death of a relative dear<br>
+		for that life is patriarchy<br>
+		cleaving the darkness round the gates of our earthmoulded senses<br><br></p>
+
+
+		<p>and be seen to love and be beloved<br>
+		i love it when you look upon the bag<br>
+		een death to die for englands sake<br>
+		i just need someone to remember me<br>
+		and like the shadow of the pines<br>
+		of a telephone spreading it like a cloak on thine<br>
+		the golden laws of love shall be purified by pain<br>
+		upon you like a weapon<br>
+		once more in the wind and drew<br>
+		and look upon you and infest<br><br></p>
+            
+       	<h2 id='Resources'>Resources</h2>
+            <p>I was able to finish this project fairly quickly because of some great online resources. The thermal printer was basically plug and play because of this <a href ='https://learn.adafruit.com/pi-thermal-printer'>Adafruit Tutorial</a> and the code was mostly written for MEGAGOD I just had to make a new corpus. </p>
+            
+     
+            </div>
+
+      <div class="col-md-3 col-md-offset-1 blognav">
+        <h2>Navigate</h2>
+        <ol class="list-unstyled">
+          <li><a href="#Intro"><h4>Intro</h4></a></li>
+          <li><a href="#Resources"><h4>Resources</h4></a></li>
+        </ol>
+        <ol class="list-unstyled" style="margin-top:25px;">
+          <li><a href="index.html"><h4><small>Back to home page</small></h4></a></li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="text-muted">
+    <div class="container">
+      <ul class="list-inline">
+        <li>Thanks for reading!</li>
+        <li><a href="#">Back to top</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
