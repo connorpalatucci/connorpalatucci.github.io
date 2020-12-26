@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Slide Projector</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="blog.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class = "container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Connor Palatucci</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class = "container">
+    <h1 id = "Intro" style ="font-size:70px;">Slide Projector</br>
+      <small style ="font-size:35px;">2019-2020</small></h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 blog">
+        <h2 id="intro">Introduction</h2>
+         <p>I have been working on this slide projector project for a little over a year and it’s finally done! It’s used to project 35 mm slides onto the wall or ceiling. I think of it as a way to hang a photo on the wall without having to get it printed. People often ask where I get the slides. Slide photos are easy to make, you just need to buy color positive film and get it developed. My favorite is Ektachrome. </p>
+
+         <img class="img-responsive" src="images/slide/intro.jpg">
+          
+
+         <p>I have been interested in projects involving light and projections ever since I saw James Turrell’s work at <a href='https://massmoca.org/event/james-turrell/'>MASS MoCa</a>. I’ve been experimenting with different colored LEDs and theatre gels in my photography and for lighting at home. I also spent a few weeks experimenting with electroluminescent wire. Some pictures of this related work are at the end.  </p>
+
+         <p>The idea to combine light work with photography started in March of 2019 when my friend <a href='https://oliviamridge.com/'>Olivia</a> came down to visit and we worked together on her upcoming photography project. Together we made 20 wooden light boxes to backlight her photos for an  exhibit. Since then I’ve made several light boxes for my own pictures and I have a parametric model for 3D printing them at any size. This project naturally led to the projector but it took about a year of playing with lenses on and off to get anywhere with it.  </p>
+
+         <iframe style = 'display:block; margin:15px auto;' width="560" height="315" src="https://www.youtube.com/embed/aBLSqcnK03A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2 id="bench">Optical Bench</h2>
+
+        <p>The optical bench was really the V0 version of the projector. I bought some unmounted lenses and then 3D printed holders for the lenses, a simple light source, and a slide. Then I played around with different combinations of slides and lenses until I got some projections. During this whole project I found if very difficult to find good resources on the optics of projection. I did eventually find a book that has some good stuff in it: <i>Optics and Optical Instruments</i> by B. K. Johnson, but most of the optical stuff in this project I just figured out experimentally.</p>
+
+        <iframe style = 'display:block; margin:15px auto;' width="560" height="315" src="https://www.youtube.com/embed/8wYj9NdUmg4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p> As you can see the optical bench got me started projecting my first few images, but this setup didn’t project large enough for what I wanted, I needed a shorter focal length lens stack. </p>
+
+        <h2 id="tv">TV Lens</h2> 
+
+        <P>One lucky day while walking home from the train station after work I saw a huge rear projection TV on the curb. I had a vague idea of how these TVs worked and thought there would probably be some nice projection lenses inside. So right there on the curb I started taking apart the TV to get at the lenses in the back. </P>
+
+        <iframe style = 'display:block; margin:15px auto;' width="560" height="315" src="https://www.youtube.com/embed/FXo4O1jwY2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>These lenses were larger and I spent a lot of time playing with them getting some slightly better projections than the optical bench setup. I even worked on some initial CAD to try to package it with a light source, slide holder, and focusing mechanism into a nice looking product. </p>
+
+        <p>The main problem with this lens, though, was chromatic aberration. In a rear projection TV you have three separate color channels projecting onto the screen. This means there’s a red lens, a green lens, and a blue lens, all with a dedicated light source. Because the red lens only has pure red light going through it the lens doesn’t need to be color corrected at all. The result when you try to project full color through an uncorrected lens is a blurry image with glow around the highlights. It actually looks pretty cool, but only on certian images.</p>
+
+        <h2 id="camera">Camera Lens</h2> 
+
+        <P>The key breakthrough with the project was one night when I was again playing with different light sources and lens combinations trying to figure out why I couldn’t project a clear image. I had just purchased a manual lens for my digital camera and decided to try projecting through it. Immediately I got the crisp, focused image I had been looking for. This was the moment when I realized that a film camera is optically exactly the same thing as a slide projector. </P>
+
+        <p>I had a broken SLR camera lying around that I must have picked up at a flea market. That night I started taking apart the camera to try to remove everything except the lens mount and the film holder.</p>
+
+        <div class="row doubleimage">
+          <div class = "col-md-6">
+            <img class="img-responsive" src="images/slide/camera1.jpeg">
+          </div>
+          <div class = "col-md-6">
+            <img class="img-responsive" src="images/slide/camera2.jpeg">
+          </div>
+        </div>        
+
+        <p>The following few revisions were focused on packaging a good light source and making it look nice. You can see those revisions below.</p>
+
+        <img class="img-responsive" src="images/slide/camera3.jpg">
+        <p style='text-align:center'>The first version incorperating the camera lens and slide holder</p>
+
+        <img class="img-responsive" src="images/slide/revisions.jpg">
+        <p style='text-align:center'>Many revisions to get the final integration right</p>
+
+        <h2 id="light">Light Source</h2> 
+
+        <P>I went through the same process with the light source as I did with the lens. Starting with a high design effort lower quality process (unmounted and salvaged lenses) and ending up with repurposing a packaged product (camera lens). I spent a lot of time trying to get unmounted COB LEDs to work. I thought these were cool because they are insanely powerful and cheap. You can get 5W through a tiny little diode, but with great light comes great heat. I could get these running for about 5 seconds before they popped. I tried different heat-sinks and thermally conductive paste. I was running them with a proper current controlled driver, but still never got them to live for more than a minute. Ultimately I went with a packaged LED MR16 floodlight, these are way simpler to use because all of the thermal management is built in. They just take 12 VDC and you’re good to go. The other advantage is that they come with lenses and can be purchased at a much narrower beam angle than the COB lights. A narrower beam angle helps package the slide holder further from the hot light source without losing too much light. After giving up on the COB light I found this <a href='https://www.youtube.com/watch?v=Y06VHj1GvLI'>excellent guide</a> to getting them to work. If you’re going to try building a light source start here. </P>          
+
+        <h2 id="conclusion">Conclusion</h2> 
+
+        <P>After about 7 distinct iterations I finally have a projector that I’m happy with. The first one I build I sent as a gift to Olivia. Then shortly after I bought another SLR for $5 on ebay and built a copy for myself. </P>
+
+        <p>The final projector has a little tripod with two mounts for projecting portrait and landscape slides. It’s got my favorite toggle switch on the top and a 12V port on the side. I love projecting a photo on the wall or ceiling of my room all day, and it’s nice to switch the image based on what color light I want in the room. </p>            
+                      
+        <h2 id='photos'>More Photos</h2>
+
+        <img class="img-responsive" src="images/slide/cad1.bmp">
+
+        <img class="img-responsive" src="images/slide/cad3.bmp">
+        <p style='text-align:center'>Some screenshots of the CAD</p>
+
+        <div class="row doubleimage">
+          <div class = "col-md-6">
+            <img class="img-responsive" src="images/slide/projection1.jpeg">
+          </div>
+          <div class = "col-md-6">
+            <img class="img-responsive" src="images/slide/projection2.jpeg">
+          </div>
+          <p style='text-align:center'>More projections</p>
+        </div>         
+
+        <img class="img-responsive" src="images/slide/glass.jpg">
+        <p style='text-align:center'>The Slide is held behind a pane of glass to protect it from the heat of the light</p>
+
+        <img class="img-responsive" src="images/slide/disassem.jpg">
+        <p style='text-align:center'>Disassembled</p>
+
+
+        <h2 id='lights'>Lights</h2>
+
+        <p>Some smaller but related projects involving light.</p>
+
+        <h3 style='text-align:center'>Sculptures</h2>
+        <p style='text-align:center'>3D printed sculptures with electroluminescent wire</p>
+        <img class="img-responsive" src="images/slide/sculpture1.jpg">
+        <img class="img-responsive" src="images/slide/sculpture2.jpg">
+
+        <h3 style='text-align:center'>Cycas</h2>
+        <p style='text-align:center'>Cycas Revoluta photographed with theater gels on flashlights</p>
+        <img class="img-responsive" src="images/slide/cycas1.jpg">
+        <img class="img-responsive" src="images/slide/cycas2.jpg">
+        <img class="img-responsive" src="images/slide/cycas3.jpg">
+
+        <h3 style='text-align:center'>Photo Boxes</h2>
+        <img class="img-responsive" src="images/slide/box1.jpg">
+        <img class="img-responsive" src="images/slide/box2.jpg">
+        <img class="img-responsive" src="images/slide/box3.jpg">        
+
+
+
+                      
+      </div>
+
+      <div class="col-md-3 col-md-offset-1 blognav">
+        <h2>Navigate</h2>
+        <ol class="list-unstyled">
+          <li><a href="#intro"><h4>Intro</h4></a></li>
+          <li><a href="#bench"><h4>Optical Bench</h4></a></li>
+          <li><a href="#tv"><h4>TV Lens</h4></a></li>
+          <li><a href="#camera"><h4>Camera Lens</h4></a></li>
+          <li><a href="#light"><h4>Light Source</h4></a></li>
+          <li><a href="#conclusion"><h4>Conclusion</h4></a></li>
+          <li><a href="#photos"><h4>More Photos</h4></a></li>                    
+          <li><a href="#lights"><h4>Lights</h4></a></li>                    
+        </ol>
+        <ol class="list-unstyled" style="margin-top:25px;">
+          <li><a href="index.html"><h4><small>Back to home page</small></h4></a></li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="text-muted">
+    <div class="container">
+      <ul class="list-inline">
+        <li>Thanks for reading!</li>
+        <li><a href="#">Back to top</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
